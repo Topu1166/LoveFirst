@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slide Menu</title>
+    <link href="whatever1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="navbar">
+        <span>
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="25px" height="25px">
+                    <path d="M0,5 25,5" stroke="#000" 
+                     stroke-width="2"/>
+                    <path d="M0,12 25,12" stroke="#000" 
+                    stroke-width="2"/>
+                    <path d="M0,19 25,19" stroke="#000" 
+                    stroke-width="2"/>
+                </svg>
+            </a>
+        </span>
+
+        <div class="nav_in">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Div ####### -->
+    <div class="side_nav" id="side_nav0">
+                    <a href="#" id="btn_close" onclick="closeSlideMenu()">&times;</a>
+                    <div class="side_nav1">
+                    <li><a href="#">Aim</a></li>
+                    <li><a href="#">Info. Desk</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Bill</a></li>
+                    </div>     
+    </div>
+    <div id="content">
+        <h1>Responsive Slide Menu</h1>
+        <div class="main">
+            <div class="navigation_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#" class="join">Join Us</a></li>  
+                
+            </div>
+            <div class="main_page">
+                <h3>Head Office :</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur accusamus cum natus esse quibusdam quaerat eveniet ad nam, id ipsam sint repellat temporibus odio odit quidem ullam atque, tenetur architecto tempora! Incidunt quo hic autem, mollitia aut eaque quae error? Laborum eveniet neque nobis, quam odio, repudiandae eaque sequi, unde odit fugiat nulla! Ea maxime, voluptates impedit necessitatibus numquam dolorum saepe! Magnam tempora autem doloremque exercitationem eum similique labore qui atque expedita, impedit ab id voluptatem fuga eaque numquam maiores! Rerum delectus odit fugit ipsa harum non nisi suscipit similique corporis optio rem quae, possimus necessitatibus officia architecto nesciunt alias repellendus culpa est explicabo? Sed officiis ullam totam nisi alias, iusto autem maiores cumque atque? Asperiores deleniti eveniet iure expedita harum et, optio eos quo placeat atque nostrum, ex autem aliquam blanditiis delectus? Voluptatum minima excepturi explicabo debitis quia animi enim sequi deleniti eum, suscipit, perspiciatis, facilis quod maiores rem odit exercitationem? Voluptates laborum perspiciatis a aliquam cumque? Consequatur repellat, eius cupiditate vel eos sapiente omnis facilis saepe, dolore blanditiis, atque amet doloremque totam! Modi nostrum harum quia esse.</p>
+                <h3>Dedication :</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at tenetur hic natus expedita, eaque quae dolorum facere ipsa voluptatum, maiores similique ad mollitia iusto autem odio earum nemo recusandae laborum, doloribus ullam in deleniti. Voluptatibus autem natus error quisquam debitis! Maxime rem voluptate quasi magni delectus eius, dolor eos corporis reprehenderit placeat nemo eveniet iste quod officiis eligendi et quis culpa. Odit praesentium quia autem, alias eveniet tempora error, voluptatum sequi ad nemo amet. Mollitia officia beatae eligendi, illum, corporis iste architecto tenetur voluptates culpa fugit, non magni? Ut reprehenderit beatae non veritatis sapiente corporis molestias quidem totam, incidunt aspernatur numquam enim adipisci! Sint incidunt ex dolore sed dicta mollitia est harum quidem eaque natus suscipit impedit veniam molestias quos animi vel nam ea praesentium labore asperiores, deleniti minus. Accusamus sapiente libero facere rerum ea ratione eligendi. Error, laboriosam. Qui sequi nostrum cum et error beatae ratione culpa veritatis.</p>
+                <h3>Purposes :</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid at voluptatibus inventore incidunt ipsum, fuga voluptates totam facilis numquam quam aut? Harum libero, eius laborum labore sequi ab animi excepturi maxime, id tempora nemo, atque cupiditate alias vel. Iusto corrupti ipsum quidem nostrum ut, quibusdam suscipit mollitia sequi. Fuga nulla tenetur velit! Dolorem et vero mollitia nesciunt, magni similique suscipit natus animi officiis molestias maiores tempora quisquam. Debitis, dolore.</p>
+            </div>
+        </div>
+        <div class="footer">
+            Topu Halder &copy; All Rights Reserved.
+        </div>
+    </div>
+
+    <!-- ### SCRIPT ### --> <!-- ### SCRIPT ### --> 
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side_nav0')
+            .style.width = "250px";
+            document.getElementById('content')
+            .style.marginLeft = "250px";
+        }
+
+        function closeSlideMenu(){
+            document.getElementById('side_nav0')
+            .style.width = "0px";
+            document.getElementById('content')
+            .style.marginLeft = "0px";
+        }
+    </script>
+</body>
+</html>
